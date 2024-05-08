@@ -1,0 +1,40 @@
+- git
+git add --all
+git commit "message of choice"
+git remote add origin "https://github.com/klovertexarkana/frontend-capstone"
+git push -u origin master
+
+- semantic html = html5 syntax that makes webpages convey more meaning, allowing people/screen readers/
+search engines to better understand a site's markup
+    - see https://www.coursera.org/learn/html-and-css-in-depth/supplement/ZIzeF/semantic-html-cheat-sheet
+    - semantic tag
+        - nav, aside, header, footer, main, article, etc.
+    - meta tag contains data about a given web page
+        - used to define 
+            - SEO-related data
+            - reponsive and movile behavior 
+            - encoding
+    - role attribute
+        - many elements have implicit roles, but you can make it explice by adding the role attribut
+
+<a href="/book" role="button">Book a table</a>
+
+- open graph protocol = built by facebook to describe the content of a wepage 
+    - improve ability to share web pages on social media 
+    - improve search engine optimization (SEO)
+    - description = summary of what a given page is about
+
+<meta name="description" content="Get all your sports fishing equipment at One Place Fishing. Open Monday to Friday, 9 to 5, in the Great Lake area."/>
+
+    - og:title = acts as a title for your shared link or shared content
+
+<meta name="og:title" content="One Place Fishing"/>
+
+    - og:description = follows the og:title
+
+<meta name="og:description" content="some description here"/>
+
+    - og:image = specifies the image to be served when a link is shared on social media
+
+<meta name="og:image" content="https://example.com/one-place-fishing-store.jpg"/>
+
