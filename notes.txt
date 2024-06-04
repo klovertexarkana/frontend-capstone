@@ -38,3 +38,37 @@ search engines to better understand a site's markup
 
 <meta name="og:image" content="https://example.com/one-place-fishing-store.jpg"/>
 
+- css review
+    - grid layout most modern and common
+        - flexbox still in use
+    - several methodds for building a grid layout
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 2fr 1fr; 
+}
+
+        - fr = fraction 
+        - you could also use px values instead of fr 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 2fr 1fr;
+}
+
+        - repeat function can repeat columns or rows
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: minmax(150px, auto);
+}
+
+        - the minmax function used as above w/ grid-auto-rows will create rows that are 150px each
+
+- setting up the CSS for the actual project
+    - going to use the the method in the medium file to make a separate grid for each 
+    row, and then likely use grid template areas for each row
+        - see <Nav /> and app.css for basic idea
